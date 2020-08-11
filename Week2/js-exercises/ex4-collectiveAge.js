@@ -9,9 +9,11 @@
  */
 
 function collectiveAge(people) {
-  // return the sum of age for all the people
+  return people.reduce((totalAge, element) => totalAge + element.age,0);
+  
 }
 
+let collectiveMembers = collectiveAge;
 const hackYourFutureMembers = [{
     name: 'Wouter',
     age: 33
