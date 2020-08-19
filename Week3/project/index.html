@@ -4,11 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Tip Calculator</title>
 </head>
 
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <h1>Tip Calculator</h1>
+    <form action="">
+      <label for="amount">How much was your bill?</label>
+      <span>$</span><input type="text" id="amount">
+      <label for="service"></label>
+      <select id="service">
+        <option value="">How was your service?</option>
+        <option value="30">30%</option>
+        <option value="20">20%</option>
+        <option value="15">15%</option>
+        <option value="10">10%</option>
+        <option value="5">5%</option>
+      </select>
+<label for="sharing-people">How many people are sharing the bill?</label>
+<input type="text" id="sharingPeople">
+
+    </form>
+    <button id="calculate-button">cal</button>
+    <h2 id="result"></h2>
+  </div>
   <script src="index.js"></script>
 </body>
 
