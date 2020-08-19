@@ -46,7 +46,7 @@ const secondWalkCat = function () {
     // the cat comes back to the most window left.
     GoCatBack();
     // if the Left of image is "0px" run the catWalk().
-    if (img.style.left == '0px') {
+    if (img.style.left == '0') {
       firstWalkCat = window.setInterval(catWalk, 50);
     }
   }
