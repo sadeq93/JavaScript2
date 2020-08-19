@@ -1,4 +1,4 @@
-const body = document.querySelector('body');
+const body = document.body;
 body.style.fontFamily = "Arial, sans-serif";
 const ul = body.children[1].children;
 let myInfo = ['Sadeq', 'Pizza','Nieuwkoop']
