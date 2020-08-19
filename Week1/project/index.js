@@ -13,9 +13,9 @@ let changeQuote = document.getElementById("Change-Quote-button");
 // creat a function to get a quote[]-Element randomly.THEN insert the Quote inside <h1> and who says inside <p>.
 const changeTheQuote = function () {
   // store <h1>.
-  let quoteText = document.getElementById("text-box").children[0].children[1];
+  let quoteText = document.getElementById("quote-text");
   // store <p>.
-  let quoteFor = document.getElementById("text-box").children[1];
+  let quoteFor = document.getElementById("who-says");
   // create random number
   let randomIndex = Math.floor(Math.random() * quotes.length);
   // get a quote randomly,THEN insert the Quote inside <h1> and who says inside <p>.
