@@ -14,8 +14,17 @@ does not return anything but removes any duplicate elements from the array.
 // WRITE YOUR FUNCTION HERE
 
 const letters = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c', 'b'];
+const removeDuplicates = (array) => {
+  for (let i = array.length - 1; i >= 0; i--) {
+    if (i !== array.indexOf(array[i])) {
+      array.splice(array[i], 1)
+    }
+  }
+  return array.sort()
+}
 
-removeDuplicates(letter);
+removeDuplicates(letters);
 
-if (letters === ['a', 'b', 'c', 'd', 'e', 'f'])
+if (letters == ['a', 'b', 'c', 'd', 'e', 'f'] + []) {
   console.log("Hooray!")
+}

@@ -7,6 +7,7 @@ const CalculateTip = () => {
   const result = document.getElementById('result');
 
   let tipAmount = (parseFloat(amount.value) + (parseFloat(amount.value) / 100) * parseFloat(service.value)) / parseFloat(sharingPeople.value);
+  tipAmount = Math.floor(tipAmount*100)/100
   let amountFlag = false;
   let sharingPeopleFlag = false;
   if (amount.value === '' || service.value === '' || sharingPeople.value === '') {
